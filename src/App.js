@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import web3 from './web3';
+import ConnectWallet from './components/ConnectWallet';
+import UploadNFT from './components/UploadNFT';
+import NFTDisplay from './components/NFTDisplay';
+import './styles/App.css';
+
+const App = () => {
+  const [account, setAccount] = useState('');
+
+  const connectWallet = async () => {
+    const accounts = await web3.eth.requestAccounts();
+    setAccount(accounts[0]);
+  };
+
+  return (
+    <div className="App">
+      <header>
+        <h1>NFT Marketplace</h1>
+        {account ? <p>Connected: {account}</p> : <ConnectWallet connectWallet={connectWallet} />}
+      </header>
+      {account && (
+        <main>
+          <UploadNFT />
+          <NFTDisplay />
+        </main>
+      )}
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+
+
+/*import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import UploadNFT from './components/UploadNFT';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <UploadNFT />
     </div>
   );
 }
 
-export default App;
+export default App;*/
+
+
+
+

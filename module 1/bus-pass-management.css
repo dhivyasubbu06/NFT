@@ -1,0 +1,183 @@
+/*body {
+    font-family: Arial, sans-serif;
+    background-color: #a0b4c2; /* Light gray-blue background */
+    /*margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left Side - Bus Image */
+/*.image-container {
+    width: 50%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Right Side - Bus Pass Management */
+/*.content-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a0b4c2;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 4px solid white;
+    width: 80%;
+    max-width: 400px;
+}
+
+h2 {
+    font-size: 28px; /* Bigger title */
+    /*font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+/*}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    width: auto;
+    min-width: 200px;
+}
+
+.apply-btn {
+    background-color: #007bff;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+}
+
+.renew-btn {
+    background-color: #28a745;
+}
+
+.renew-btn:hover {
+    background-color: #1e7e34;
+}
+
+/* Responsive Design */
+/*@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .content-container {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 400px;
+    }
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    font-size: 35px;
+}
+
+.profile-icon {
+    font-size: 30px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.background-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background: #3683fc;
+    border-bottom-left-radius: 30%;
+}
+
+.btn-container {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -45%);
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    background: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 15px 11px;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 60px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

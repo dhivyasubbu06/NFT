@@ -1,0 +1,28 @@
+button{
+    color:blue;
+    background-color:rgb(0, 255, 255);
+    border:none;
+    padding: 10px 20px;
+    transition:background-color 1s ease;
+}
+button:hover{
+    background-color:blueviolet;
+}
+
+@keyframes move{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform: translateX(100px);
+    }
+}
+.animate{
+    animation:move 1s infinite alternate;
+}   
+--root{
+    --first:rgb(0, 255, 255);
+}
+.bg{
+    background-color: background-color(--first);
+}
